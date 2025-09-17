@@ -1,0 +1,266 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Navnirman Construction Company</title>
+  <meta name="description" content="Navnirman Construction Company - Building modern spaces with trust, quality and safety." />  <style>
+    :root{--accent:#0f6cbf;--muted:#6b6b6b;--bg:#f7f9fb;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; color:#111; background:var(--bg);line-height:1.5}
+    a{color:var(--accent);text-decoration:none}
+    header{background:linear-gradient(90deg,#0f6cbf33,transparent);backdrop-filter:blur(4px);position:sticky;top:0;z-index:60}
+    .navwrap{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;background:linear-gradient(135deg,#0f6cbf,#0b84d6);border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:700}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{padding:8px 10px;border-radius:8px;font-weight:600}
+    .cta{background:var(--accent);color:#fff;padding:8px 12px;border-radius:10px}
+
+    /* Hero */
+    .hero{max-width:1100px;margin:28px auto;padding:28px;display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .hero-left h1{font-size:clamp(26px,4.5vw,40px);margin:0 0 12px}
+    .hero-left p{color:var(--muted);margin:0 0 18px}
+    .buttons{display:flex;gap:12px}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(12,20,40,0.06)}
+    .quick-stats{display:flex;gap:8px;flex-wrap:wrap}
+    .stat{flex:1;min-width:110px}
+    .stat h3{margin:0;font-size:20px}
+    .stat p{margin:4px 0 0;color:var(--muted)}
+
+    /* Sections */
+    section{max-width:1100px;margin:18px auto;padding:6px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{padding:18px;border-radius:12px}
+
+    /* Projects */
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .project{overflow:hidden;border-radius:10px}
+    .project img{width:100%;height:160px;object-fit:cover;display:block}
+    .project .meta{padding:10px;background:#fff}
+
+    /* Certificates */
+    .certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .cert{padding:14px;background:#fff;border-radius:10px;text-align:center}
+
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 340px;gap:18px}
+    form label{display:block;margin-top:10px;font-weight:600}
+    input, textarea{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e5e7eb}
+    button[type=submit]{margin-top:12px;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;border:0}
+
+    footer{max-width:1100px;margin:28px auto;padding:18px;color:var(--muted);display:flex;justify-content:space-between}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      nav{display:none}
+      .mobile-toggle{display:block}
+      .contact-grid{grid-template-columns:1fr}
+    }
+    .mobile-toggle{display:none;cursor:pointer;padding:8px}
+    .mobile-menu{display:none;background:var(--card);position:absolute;right:16px;top:72px;padding:12px;border-radius:10px;box-shadow:0 8px 26px rgba(12,20,40,0.12)}
+    .mobile-menu a{display:block;padding:8px}
+
+    /* small niceties */
+    .badge{display:inline-block;padding:6px 8px;border-radius:8px;background:#eef6ff;color:var(--accent);font-weight:700}
+  </style></head>
+<body>
+  <header>
+    <div class="navwrap">
+      <div class="brand">
+        <div class="logo">N</div>
+        <div>
+          <div style="font-weight:800">Navnirman Construction</div>
+          <div style="font-size:12px;color:var(--muted)">Quality • Safety • Trust</div>
+        </div>
+      </div><nav aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+    <a class="cta" href="#contact">Get Quote</a>
+  </nav>
+
+  <div class="mobile-toggle" id="mobBtn">☰</div>
+  <div class="mobile-menu" id="mobMenu" role="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+  </header>  <main>
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <div class="badge">Since 20XX</div>
+        <h1>We build spaces that last — Navnirman Construction Company</h1>
+        <p>Reliable construction services: residential, commercial, interior fit-outs, and project management. We deliver projects on time with safety, quality and transparent pricing.</p>
+        <div class="buttons">
+          <a class="cta" href="#contact">Request a Quote</a>
+          <a href="#projects">Our Projects</a>
+        </div><div style="margin-top:18px" class="card">
+      <div class="quick-stats">
+        <div class="stat"><h3>120+</h3><p>Projects delivered</p></div>
+        <div class="stat"><h3>15 yrs</h3><p>Experience</p></div>
+        <div class="stat"><h3>98%</h3><p>Client satisfaction</p></div>
+      </div>
+    </div>
+  </div>
+
+  <aside>
+    <div class="card">
+      <h3 style="margin-top:0">Contact</h3>
+      <p style="margin:6px 0">Phone: <strong>+91-XXXXXXXXXX</strong></p>
+      <p style="margin:6px 0">Email: <strong>info@navnirman.example</strong></p>
+      <p style="margin:6px 0">Office: 123, Main Road, Your City</p>
+      <a href="#contact">View contact &rarr;</a>
+    </div>
+  </aside>
+</section>
+
+<section id="about" class="card">
+  <h2>About Us</h2>
+  <p style="color:var(--muted)">Navnirman Construction Company is committed to delivering high-quality construction projects with a focus on safety, timely delivery and transparent pricing. Our team includes architects, engineers and project managers who work together to execute projects from concept to completion.</p>
+
+  <div style="margin-top:12px" class="grid-3">
+    <div class="service card">
+      <h3>Our Mission</h3>
+      <p>To create resilient and functional spaces that enhance communities and deliver measurable value.</p>
+    </div>
+    <div class="service card">
+      <h3>Our Vision</h3>
+      <p>To be a trusted construction partner known for excellence, integrity and innovation.</p>
+    </div>
+    <div class="service card">
+      <h3>Safety First</h3>
+      <p>We follow strict safety protocols and training programs for all workers and staff.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2 style="margin:6px 0">Services</h2>
+  <div class="grid-3">
+    <div class="service card">
+      <h3>Residential Construction</h3>
+      <p>Custom homes, apartment buildings, and renovations with end-to-end project management.</p>
+    </div>
+    <div class="service card">
+      <h3>Commercial Construction</h3>
+      <p>Offices, retail spaces, warehouses and industrial facilities built to spec.</p>
+    </div>
+    <div class="service card">
+      <h3>Interior Fit-outs</h3>
+      <p>Turnkey interiors, MEP coordination, and FF&amp;E procurement for offices and retail.</p>
+  </div>
+</section>
+
+<section id="projects" class="card">
+  <h2>Projects</h2>
+  <p style="color:var(--muted)">Selected completed and ongoing projects. Replace images with your project photos (see instructions at the bottom).</p>
+  <div class="projects">
+    <div class="project card">
+      <img src="https://images.unsplash.com/photo-1562157878-818bc0726f98?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 1">
+      <div class="meta"><strong>Residential Complex — GreenVille</strong><p style="margin:6px 0;color:var(--muted)">High-rise residential with 80 units — Completed 2023</p></div>
+    </div>
+    <div class="project card">
+      <img src="https://images.unsplash.com/photo-1505691723518-36a9c40f3f5b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 2">
+      <div class="meta"><strong>Office Building — TechPark</strong><p style="margin:6px 0;color:var(--muted)">Grade-A office fit-out — Completed 2022</p></div>
+    </div>
+    <div class="project card">
+      <img src="https://images.unsplash.com/photo-1496024840928-4c417adf211d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 3">
+      <div class="meta"><strong>Retail Mall — Central Plaza</strong><p style="margin:6px 0;color:var(--muted)">Shell & core with interior fit-outs — Ongoing</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates" class="card">
+  <h2>Certificates & Registrations</h2>
+  <p style="color:var(--muted)">Upload scanned registration certificates, GST, company registration and other proofs here. Placeholder certificates are shown — replace them with your authentic scans.</p>
+  <div class="certs">
+    <div class="cert card"><strong>Company Registration</strong><p style="color:var(--muted)">Reg No: XYZ-000</p></div>
+    <div class="cert card"><strong>GST Certificate</strong><p style="color:var(--muted)">GSTIN: 00AAAA0000A1Z0</p></div>
+    <div class="cert card"><strong>Quality Certificate</strong><p style="color:var(--muted)">ISO 9001 (sample)</p></div>
+  </div>
+</section>
+
+<section id="contact" class="card">
+  <h2>Contact Us</h2>
+  <div class="contact-grid">
+    <div>
+      <p style="color:var(--muted)">Want a free site visit or quotation? Fill the form and we'll reach out within 48 hours.</p>
+      <form onsubmit="handleSubmit(event)">
+        <label for="name">Name</label>
+        <input id="name" required placeholder="Your name">
+        <label for="email">Email</label>
+        <input id="email" type="email" required placeholder="you@example.com">
+        <label for="phone">Phone</label>
+        <input id="phone" required placeholder="+91-XXXXXXXXXX">
+        <label for="msg">Project Details</label>
+        <textarea id="msg" rows="4" placeholder="Brief description"></textarea>
+        <button type="submit">Send Request</button>
+      </form>
+    </div>
+
+    <aside>
+      <div class="card">
+        <h3 style="margin-top:0">Office</h3>
+        <p>123 Main Road<br>Your City, PIN</p>
+        <p>Email: info@navnirman.example<br>Phone: +91-XXXXXXXXXX</p>
+        <p><small style="color:var(--muted)">Map: Add your Google Maps embed iframe here</small></p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div>© <strong>Navnirman Construction</strong> — All rights reserved</div>
+    <div style="color:var(--muted)">Designed by Navnirman • Built with care</div>
+  </footer>  <script>
+    // Mobile menu
+    const mobBtn = document.getElementById('mobBtn');
+    const mobMenu = document.getElementById('mobMenu');
+    mobBtn.addEventListener('click',()=> mobMenu.style.display = mobMenu.style.display === 'block' ? 'none' : 'block');
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});
+          mobMenu.style.display='none';
+        }
+      })
+    })
+
+    // Simple form handler (no backend) - will show an alert and clear form
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const msg = document.getElementById('msg').value.trim();
+      if(!name||!email||!phone){alert('Please fill required fields');return}
+      alert('Thanks ' + name + '! Your request is noted. (This is a demo form — connect a backend to collect leads.)');
+      e.target.reset();
+    }
+  </script>  <!--
+    HOW TO USE:
+    1. Save this file as index.html
+    2. Replace placeholder texts and images (search for 'Replace' comments)
+    3. Host for free:
+       - GitHub Pages: create a repo, push index.html to main branch, enable Pages
+       - Netlify / Vercel: drag-and-drop this file or connect a Git repo
+    4. To add a custom domain: register domain and follow host instructions to map
+
+    NOTES:
+    - The contact form is demo-only. To collect leads, integrate with Formspree, Getform, or your own backend.
+    - Replace images with your project photos. Use relative paths (images/..)
+  --></body>
+</html>
